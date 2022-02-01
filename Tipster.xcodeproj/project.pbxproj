@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01773B1DE7A6B2AC3A3815DC /* Pods_Tipster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836035459480C213E7141E9E /* Pods_Tipster.framework */; };
 		EB0D04E727A92867005E3C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D04E627A92867005E3C58 /* AppDelegate.swift */; };
 		EB0D04E927A92867005E3C58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D04E827A92867005E3C58 /* SceneDelegate.swift */; };
 		EB0D04EB27A92867005E3C58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D04EA27A92867005E3C58 /* ViewController.swift */; };
 		EB0D04EE27A92867005E3C58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0D04EC27A92867005E3C58 /* Main.storyboard */; };
 		EB0D04F027A92868005E3C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB0D04EF27A92868005E3C58 /* Assets.xcassets */; };
 		EB0D04F327A92868005E3C58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0D04F127A92868005E3C58 /* LaunchScreen.storyboard */; };
+		EB0D050527A9420B005E3C58 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D050427A9420B005E3C58 /* MovieCell.swift */; };
+		EB0D050827A94627005E3C58 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = EB0D050727A94627005E3C58 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274B405E6D6817842D324374 /* Pods-Tipster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tipster.debug.xcconfig"; path = "Target Support Files/Pods-Tipster/Pods-Tipster.debug.xcconfig"; sourceTree = "<group>"; };
+		51DA25FED6F9916131FD64A1 /* Pods-Tipster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tipster.release.xcconfig"; path = "Target Support Files/Pods-Tipster/Pods-Tipster.release.xcconfig"; sourceTree = "<group>"; };
+		836035459480C213E7141E9E /* Pods_Tipster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tipster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0D04E327A92867005E3C58 /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0D04E627A92867005E3C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB0D04E827A92867005E3C58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,7 @@
 		EB0D04EF27A92868005E3C58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB0D04F227A92868005E3C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB0D04F427A92868005E3C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0D050427A9420B005E3C58 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0D050827A94627005E3C58 /* AlamofireImage in Frameworks */,
+				01773B1DE7A6B2AC3A3815DC /* Pods_Tipster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2970D493279B15E8D93955FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				274B405E6D6817842D324374 /* Pods-Tipster.debug.xcconfig */,
+				51DA25FED6F9916131FD64A1 /* Pods-Tipster.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EB0D04DA27A92867005E3C58 = {
 			isa = PBXGroup;
 			children = (
 				EB0D04E527A92867005E3C58 /* Tipster */,
 				EB0D04E427A92867005E3C58 /* Products */,
+				2970D493279B15E8D93955FB /* Pods */,
+				F641622F5075DF837897F823 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +81,20 @@
 				EB0D04E827A92867005E3C58 /* SceneDelegate.swift */,
 				EB0D04EA27A92867005E3C58 /* ViewController.swift */,
 				EB0D04EC27A92867005E3C58 /* Main.storyboard */,
+				EB0D050427A9420B005E3C58 /* MovieCell.swift */,
 				EB0D04EF27A92868005E3C58 /* Assets.xcassets */,
 				EB0D04F127A92868005E3C58 /* LaunchScreen.storyboard */,
 				EB0D04F427A92868005E3C58 /* Info.plist */,
 			);
 			path = Tipster;
+			sourceTree = "<group>";
+		};
+		F641622F5075DF837897F823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				836035459480C213E7141E9E /* Pods_Tipster.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +104,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB0D04F727A92868005E3C58 /* Build configuration list for PBXNativeTarget "Tipster" */;
 			buildPhases = (
+				1DCFDC87ED69E37DC6A187E1 /* [CP] Check Pods Manifest.lock */,
 				EB0D04DF27A92867005E3C58 /* Sources */,
 				EB0D04E027A92867005E3C58 /* Frameworks */,
 				EB0D04E127A92867005E3C58 /* Resources */,
+				E5018A0AC1E4F724DF46A83B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Tipster;
+			packageProductDependencies = (
+				EB0D050727A94627005E3C58 /* AlamofireImage */,
+			);
 			productName = Tipster;
 			productReference = EB0D04E327A92867005E3C58 /* Tipster.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,9 @@
 				Base,
 			);
 			mainGroup = EB0D04DA27A92867005E3C58;
+			packageReferences = (
+				EB0D050627A94627005E3C58 /* XCRemoteSwiftPackageReference "AlamofireImage.git" */,
+			);
 			productRefGroup = EB0D04E427A92867005E3C58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +171,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DCFDC87ED69E37DC6A187E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tipster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5018A0AC1E4F724DF46A83B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tipster/Pods-Tipster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tipster/Pods-Tipster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tipster/Pods-Tipster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB0D04DF27A92867005E3C58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +220,7 @@
 			files = (
 				EB0D04EB27A92867005E3C58 /* ViewController.swift in Sources */,
 				EB0D04E727A92867005E3C58 /* AppDelegate.swift in Sources */,
+				EB0D050527A9420B005E3C58 /* MovieCell.swift in Sources */,
 				EB0D04E927A92867005E3C58 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +365,7 @@
 		};
 		EB0D04F827A92868005E3C58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274B405E6D6817842D324374 /* Pods-Tipster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,7 +384,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Tipster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Tipster5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,6 +394,7 @@
 		};
 		EB0D04F927A92868005E3C58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DA25FED6F9916131FD64A1 /* Pods-Tipster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,7 +413,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Tipster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Tipster5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,6 +443,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB0D050627A94627005E3C58 /* XCRemoteSwiftPackageReference "AlamofireImage.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB0D050727A94627005E3C58 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB0D050627A94627005E3C58 /* XCRemoteSwiftPackageReference "AlamofireImage.git" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB0D04DB27A92867005E3C58 /* Project object */;
 }
