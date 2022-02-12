@@ -1,4 +1,4 @@
-## Flix Part 2
+## Flix Part 1
 
 ### User Stories
 
